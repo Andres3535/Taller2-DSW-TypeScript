@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>TV Series</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">TV Series</h2>
+
+    <div class="row">
+      
+      <div class="col-md-8">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+            </tr>
+          </thead>
+          <tbody id="seriesTableBody">
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Columna para la tarjeta de detalles -->
+      <div class="col-md-4">
+        <div id="seriesDetailCard" class="card" style="display: none;">
+          <img id="seriesImage" class="card-img-top" src="" alt="Series Image">
+          <div class="card-body">
+            <h5 id="seriesTitle" class="card-title"></h5>
+            <p id="seriesDescription" class="card-text"></p>
+            <a id="seriesLink" href="#" target="_blank" class="btn btn-primary">Go to Series</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
